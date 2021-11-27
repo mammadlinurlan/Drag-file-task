@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: wheat;
+}
+
+.fa-trash {
+  color: red;
+  font-size: 30px;
+  background-color: wheat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.fa-trash:hover {
+  color: #2d3436;
+}
+
+.fa-download {
+  color: #0984e3;
+  font-size: 30px;
+  background-color: wheat;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fa-download:hover {
+  color: #2d3436;
+}
+/*# sourceMappingURL=style.css.map */

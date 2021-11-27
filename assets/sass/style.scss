@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+}
+
+.delBtn{
+
+}
+
+.fa-trash{
+    color:red;
+    font-size: 30px;
+    background-color: wheat;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.fa-trash:hover{
+    color: #2d3436;
+}
+
+.fa-download{
+    color: #0984e3;
+    font-size: 30px;
+    background-color: wheat;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+}
+
+.fa-download:hover{
+    color: #2d3436;
+}
