@@ -12,7 +12,7 @@ let tbody = document.querySelector("tbody");
 
 let list = document.querySelector(".listd")
 
-let rowNo = 1
+var rowNo = 0
 
 let filecount = 0
 
@@ -67,7 +67,7 @@ function showimage(file) {
         let deleteButton = document.createElement("button");
         deleteButton.style.border = "none"
         let removeIcon = document.createElement("i");
-        removeIcon.className = "fas fa-trash";
+        removeIcon.className = "fas fa-trash bg-dark";
         deleteButton.append(removeIcon)
 
         console.log(deleteButton);
@@ -85,8 +85,10 @@ function showimage(file) {
         tbody.appendChild(tr)
         let th = document.createElement("th")
         th.setAttribute("scope", "row")
-        th.innerHTML = rowNo
-        ++rowNo;
+        rowNo++;
+        th.innerText = rowNo
+        th.classList.add("nom")
+        console.log(rowNo);
         let td1 = document.createElement("td")
         let td2 = document.createElement("td")
         let td3 = document.createElement("td")
@@ -94,7 +96,7 @@ function showimage(file) {
         let td5 = document.createElement("td")
         let downloadButton = document.createElement("button")
         let downloadIcon = document.createElement("i")
-        downloadIcon.className = "fas fa-download"
+        downloadIcon.className = "fas fa-download bg-dark"
         downloadButton.appendChild(downloadIcon)
         downloadButton.style.border = "none"
         let link = document.createElement("a")
@@ -117,9 +119,13 @@ function showimage(file) {
         tr.appendChild(td3)
         tr.appendChild(td4)
         tr.appendChild(td5)
-
+        
         list.appendChild(table)
-
+        let no = document.querySelector(".nom")
+        
+        
+       
+   
         deleteButton.onclick = function () {
             if (filecount == 1) {
                 let conf = confirm("your last file , are you sure?")
@@ -132,13 +138,18 @@ function showimage(file) {
                 }
             }
             else {
+               
                 tr.remove();
                 filecount--
-                rowNo = 1
+               
 
             }
-            console.log(filecount);
+           
+           
         }
+       
     }
+    
     )
+    
 }

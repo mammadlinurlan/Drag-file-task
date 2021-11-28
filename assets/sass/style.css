@@ -20,13 +20,12 @@ body {
 }
 
 .fa-trash:hover {
-  color: #2d3436;
+  color: whitesmoke;
 }
 
 .fa-download {
   color: #0984e3;
   font-size: 30px;
-  background-color: wheat;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   -webkit-transition: 0.3s;
@@ -34,6 +33,6 @@ body {
 }
 
 .fa-download:hover {
-  color: #2d3436;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */
